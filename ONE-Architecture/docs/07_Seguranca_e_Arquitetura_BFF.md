@@ -23,17 +23,17 @@ O **ONE** endereça esse erro estrutural executando o padrão BFF sob o IPC (Int
 
 ```mermaid
 graph LR
-    subgraph Client Application Layer
+    subgraph Client ["Client Application Layer"]
         UI[Componentes UI / React]
     end
     
-    subgraph BFF Layer (Backend Seguro)
+    subgraph BFF ["BFF Layer (Backend Seguro)"]
         IPC[Canal IPC]
         DB[(File System & DB)]
         Logic[LLM Router & Orquestrador]
     end
     
-    subgraph Cloud / Terceiros
+    subgraph Cloud ["Cloud / Terceiros"]
         AI[API Externa - Cloud LLM]
     end
 
